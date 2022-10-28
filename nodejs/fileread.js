@@ -3,9 +3,16 @@
 //     console.log(data)
 // })
 
-var testFolder = '../data'
-var fs = require('fs')
+// var testFolder = '../data'
+// var fs = require('fs')
 
-fs.readdir(testFolder, function(error,filelist){
-console.log(filelist)
-});
+// fs.readdir(testFolder, function(error,filelist){
+// console.log(filelist)
+// });
+
+var fs = require('fs')
+console.log("a")
+fs.readFile('sample.txt','utf-8' ,(err,result)=>{
+    console.log(result)
+})
+console.log("C")
